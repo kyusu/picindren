@@ -45,4 +45,4 @@ will result have the effect that each file is renamed according to it's index in
     -rw-r--r--   1 kyusu  staff    0 30 Okt 15:12 1994615544.jpg -> 004.jpg
     -rw-r--r--   1 kyusu  staff    0 30 Okt 15:12 212491440.jpg  -> 006.jpg
     -rw-r--r--   1 kyusu  staff    0 30 Okt 15:12 552716224.jpg  -> 007.jpg
-    -rw-r--r--   1 kyusu  staff    0 30 Okt 15:12 592280349.jpg  -> 005.jp  g
+    -rw-r--r--   1 kyusu  staff    0 30 Okt 15:12 592280349.jpg  -> 005.jpg
