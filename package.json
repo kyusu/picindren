@@ -1,0 +1,23 @@
+{
+  "name": "renamer",
+  "version": "0.0.1",
+  "description": "Given an input file with file names in it, it will give each file a new name according to it's line number in the file",
+  "main": "renamer.js",
+  "dependencies": {
+    "lazylines": "^1.0.0",
+    "ramda": "^0.22.1",
+    "ramda-fantasy": "^0.7.0"
+  },
+  "devDependencies": {
+    "tape": "^4.6.2"
+  },
+  "scripts": {
+    "test": "node tests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kyusu/picindren"
+  },
+  "author": "Kyusu",
+  "license": "MIT"
+}
