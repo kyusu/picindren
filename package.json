@@ -1,8 +1,11 @@
 {
-  "name": "renamer",
+  "name": "picindren",
   "version": "0.0.1",
   "description": "Given an input file with file names in it, it will give each file a new name according to it's line number in the file",
-  "main": "renamer.js",
+  "main": "index.js",
+  "bin": {
+    "picIndRen": "./index.js"
+  },
   "dependencies": {
     "lazylines": "^1.0.0",
     "ramda": "^0.22.1",

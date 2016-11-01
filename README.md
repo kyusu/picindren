@@ -1,6 +1,13 @@
 # picindren (picture index renamer)
 A simple Node.js shell script which takes a text file with file names and renames the given files.
+## Install
 
+#### NPM
+```bash
+$ npm install -g picindren
+```
+
+## Usage
 If you have a file called **files.txt** containing the following links
     
     http://cdn.acme.corp/images/oooo/234234234/1213079645.jpg
@@ -29,10 +36,10 @@ and a directory containing these files like so
     -rw-r--r--   1 kyusu  staff    0 30 Okt 15:12 592280349.jpg
    
 then running
-
-    $ cat files.txt | ./renamer.js
-    
-will result have the effect that each file is renamed according to it's index in the text file
+```bash
+    $ cat files.txt | picindren
+```  
+will have the effect that each file is renamed according to it's index in the text file
 
     total 0
     drwxr-xr-x  12 kyusu  staff  408 30 Okt 15:13 .
@@ -46,3 +53,6 @@ will result have the effect that each file is renamed according to it's index in
     -rw-r--r--   1 kyusu  staff    0 30 Okt 15:12 212491440.jpg  -> 006.jpg
     -rw-r--r--   1 kyusu  staff    0 30 Okt 15:12 552716224.jpg  -> 007.jpg
     -rw-r--r--   1 kyusu  staff    0 30 Okt 15:12 592280349.jpg  -> 005.jpg
+## License
+
+  [MIT](LICENSE)
