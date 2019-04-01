@@ -1,4 +1,7 @@
 # picindren (picture index renamer)
+
+[![Known Vulnerabilities](https://snyk.io/test/github/kyusu/picindren/badge.svg?targetFile=package.json)](https://snyk.io/test/github/kyusu/picindren?targetFile=package.json)
+
 A simple Node.js shell script which takes a text file with file names and renames the given files.
 ## Install
 
