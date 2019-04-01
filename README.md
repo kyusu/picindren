@@ -3,6 +3,7 @@
 [![Known Vulnerabilities](https://snyk.io/test/github/kyusu/picindren/badge.svg?targetFile=package.json)](https://snyk.io/test/github/kyusu/picindren?targetFile=package.json)
 [![dependencies Status](https://david-dm.org/kyusu/picindren/status.svg)](https://david-dm.org/kyusu/picindren)
 [![Maintainability](https://api.codeclimate.com/v1/badges/656c6e0f143936358bc4/maintainability)](https://codeclimate.com/github/kyusu/picindren/maintainability)
+[![Build Status](https://travis-ci.org/kyusu/picindren.svg?branch=master)](https://travis-ci.org/kyusu/picindren)
 
 A simple Node.js shell script which takes a text file with file names and renames the given files.
 ## Install
