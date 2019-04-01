@@ -1,30 +1,29 @@
 'use strict';
 const url = require('url');
 const path = require('path');
-const M = require('ramda-fantasy').Maybe;
-const Just = M.Just;
-const Nothing = M.Nothing;
+const Result = require('crocks/Result');
+const tryCatch = require('crocks/Result/tryCatch');
+const composeK = require('crocks/helpers/composeK');
 
 const getFileInfoFromPath = pathName => {
     const extName = path.extname(pathName);
     const fileName = path.basename(pathName, extName);
     if (extName && fileName) {
-        return Just({
+        return Result.Ok({
             ext: extName,
             file: fileName
         });
     } else {
-        return Nothing();
+        return Result.Err(new Error('Could not derive extension & file name from pathname'));
     }
 };
 
-module.exports = line => {
-    let result = null;
-    try {
-        result = url.parse(line).pathname;
-    } catch (ex) {
-        console.log(ex);
-    }
-    const pathName = result ? Just(result) : Nothing();
-    return pathName.chain(getFileInfoFromPath);
-};
+const tryParsingUrl = tryCatch(line => url.parse(line).pathname);
+
+const checkPathName = result => result ? Result.Ok(result) : Result.Err(new Error('pathname can not be null'));
+
+module.exports = composeK(
+    getFileInfoFromPath,
+    checkPathName,
+    tryParsingUrl
+);
