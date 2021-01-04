@@ -11,7 +11,7 @@
     "lazylines": "^1.0.0"
   },
   "devDependencies": {
-    "tape": "5.1.0"
+    "tape": "5.1.1"
   },
   "scripts": {
     "test": "node tests.js"
