@@ -10,7 +10,7 @@ const e = either(identity, identity);
 const toBool = either(() => false, () => true);
 
 const checkFileInfoProperties = curry((t, fileInfo, name, extension, type) => {
-    t.ok(fileInfo.file == name && fileInfo.ext === extension, `Given a valid ${type}, getFileName should return the file info`);
+    t.ok(fileInfo.file === name && fileInfo.ext === extension, `Given a valid ${type}, getFileName should return the file info`);
 });
 
 tape('handling invalid input', t => {
