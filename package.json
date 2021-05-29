@@ -7,14 +7,16 @@
     "picIndRen": "./index.js"
   },
   "dependencies": {
-    "crocks": "^0.12.0",
-    "lazylines": "^1.0.0"
+    "crocks": "0.12.0",
+    "lazylines": "1.0.0"
   },
   "devDependencies": {
+    "c8": "7.7.2",
     "tape": "5.2.2"
   },
   "scripts": {
-    "test": "node tests.js"
+    "test": "c8 --all node tests.js",
+    "report:coverage": "c8 report --reporter=lcov"
   },
   "repository": {
     "type": "git",
