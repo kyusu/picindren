@@ -12,7 +12,7 @@
   },
   "devDependencies": {
     "c8": "7.11.0",
-    "tape": "5.4.0"
+    "tape": "5.4.1"
   },
   "scripts": {
     "test": "c8 --all node tests.js",
