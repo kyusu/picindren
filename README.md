@@ -2,7 +2,7 @@
 
 [![Node.js CI](https://github.com/kyusu/picindren/workflows/Node.js%20CI/badge.svg)](https://github.com/kyusu/picindren/actions/workflows/node.js.yml)
 [![Known Vulnerabilities](https://snyk.io/test/github/kyusu/picindren/badge.svg?targetFile=package.json)](https://snyk.io/test/github/kyusu/picindren?targetFile=package.json)
-[![dependencies Status](https://david-dm.org/kyusu/picindren/status.svg)](https://david-dm.org/kyusu/picindren)
+[![Libraries.io dependency status for GitHub repo](https://img.shields.io/librariesio/github/kyusu/picindren)](https://libraries.io/github/kyusu/picindren)
 [![Maintainability](https://api.codeclimate.com/v1/badges/656c6e0f143936358bc4/maintainability)](https://codeclimate.com/github/kyusu/picindren/maintainability)
 [![Coverage Status](https://coveralls.io/repos/github/kyusu/picindren/badge.svg?branch=master)](https://coveralls.io/github/kyusu/picindren?branch=master)
 
