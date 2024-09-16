@@ -11,7 +11,7 @@
     "lazylines": "1.0.0"
   },
   "devDependencies": {
-    "c8": "8.0.1",
+    "c8": "10.1.2",
     "tape": "5.9.0"
   },
   "scripts": {
